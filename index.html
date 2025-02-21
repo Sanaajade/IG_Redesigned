@@ -1,4 +1,7 @@
 <style> 
+  input[type="checkbox"]{
+    display: none;
+  }
   html{
  background-image: url("https://i.pinimg.com/736x/15/23/b7/1523b75e263263fba632aded055b2e6c.jpg");
   background-size: cover;
@@ -20,6 +23,18 @@
     bottom: 97px;
     right: 340px;  
   }
+  
+  .VideoContainer{
+    display: none;
+    
+  }
+  input[type="checkbox"]:checked + label + .VideoContainer {
+      display: block;
+    }
+  video {
+      max-width: 100%;
+      height: auto;
+    }
   
     .profileposts{
     position: static;
@@ -50,13 +65,25 @@
 
 <center>
 <body>
-  <a href="https://sanaajade.github.io/open_my_letter/">
-<img src="Adobe Express - file(7).png"alt="buttonimage"width=200 length=200 class="profileframe"> 
-    <img src="https://i.pinimg.com/736x/d7/50/eb/d750ebe8ca9718c42433237c534de7be.jpg" alt="description of image"width=110 length=200 class="profilepic">
-
+  
+<img src="Adobe Express - file(7).png"alt="description of inage"width=200  class="profileframe"> 
+  
+  
+  
+  <input type="checkbox" id="videoToggle">
+<label for="videoToggle">  
+    <img src="https://i.pinimg.com/736x/d7/50/eb/d750ebe8ca9718c42433237c534de7be.jpg" alt="click to play"width=110 class="profilepic">
+</label>
+    <div class="VideoContainer">
+      <video controls>
+        <source src="ScreenRecording_02-21-2025 12-04-16_1.mov" type="video/mp4" width="50" height="50">
+        </video>
+     </div>
+  
+  
+  
 <img src="Adobe Express - file (3) copy.png"alt="description of image"width=1000 length=200 class="profileposts">
 
 
-    </a>
 </body>
 </center>
